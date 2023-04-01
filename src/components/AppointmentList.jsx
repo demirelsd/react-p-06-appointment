@@ -11,7 +11,8 @@ const AppointmentList = ({ appointments, setAppointments }) => {
           : { ...appointment, consulted: !appointment.consulted };
       })
     );
-
+    //  ! with filter sequence can be change
+    //  const handleDblClick = (item) => {
     // const filteredAppointments = appointments.filter((appointment) => appointment.id !== item.id)
     // setAppointments([
     //   ...filteredAppointments,
@@ -19,7 +20,7 @@ const AppointmentList = ({ appointments, setAppointments }) => {
     //     ...item,
     //     consulted: !item.consulted,
     //   },
-    // ]);
+    // ])};
   };
   const handleDelete = (id) => {
     setAppointments(
